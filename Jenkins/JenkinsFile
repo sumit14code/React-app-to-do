@@ -2,7 +2,7 @@ pipeline{
     agent any
 
     tools{
-        nodejs 'nodejs'
+        nodejs 'nodejs' // Check whether nodejs is installed or not in Tools
     }
 
     stages{
