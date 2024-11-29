@@ -14,7 +14,7 @@ pipeline{
 
         stage('Docker build and tag'){
             steps{
-                sh "docker build -t sumit/react-to-do-application:1 ."
+                sh "docker build -t sumit14/react-to-do-application:1 ."
             }
         }
 
@@ -23,7 +23,7 @@ pipeline{
                 sh '''
                 docker stop c1
                 docker rm c1
-                docker run -it -d --name c1 -p 9000:80 sumit/react-to-do-application:1
+                docker run -it -d --name c1 -p 9000:80 sumit14/react-to-do-application:1
                 
                 '''
             }
